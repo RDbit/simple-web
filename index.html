@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <meta name="description" content="A small corner of the internet for ideas, experiments, and things worth making." />
+    <title>Little Things — A personal corner of the web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Little Things home">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>little things<span class="brand-period">.</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#about">A little about</a>
+        <a href="#interests">Things I like</a>
+        <a class="nav-contact" href="mailto:hello@example.com">Say hello <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A small corner of the internet</p>
+          <h1 id="hero-title">Making room for <span>good ideas.</span></h1>
+          <p class="hero-description">A home for the things I’m making, learning, and noticing along the way. Take a look around — there’s always something new in the works.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#interests">Explore the page <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#about">A bit about me <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="note"><span aria-hidden="true">✦</span><span>Slow ideas, made with care.</span></div>
+        </div>
+
+        <div class="hero-art" aria-label="Abstract illustration of a sunny desk with a plant, notebook, and coffee">
+          <div class="sun"></div>
+          <div class="art-label art-label-top">CURRENT MOOD <span>☀</span></div>
+          <div class="desk-shadow"></div>
+          <div class="plant-pot"><div class="pot-rim"></div><div class="pot-body"></div><i class="stem stem-one"></i><i class="stem stem-two"></i><i class="stem stem-three"></i><i class="leaf leaf-one"></i><i class="leaf leaf-two"></i><i class="leaf leaf-three"></i><i class="leaf leaf-four"></i></div>
+          <div class="book"><span>NOTES<br />&amp; THOUGHTS</span><i></i></div>
+          <div class="coffee"><div class="coffee-top"></div><div class="coffee-handle"></div></div>
+          <div class="sparkle sparkle-one">✳</div><div class="sparkle sparkle-two">✦</div>
+          <div class="art-label art-label-bottom">ONE THING AT A TIME</div>
+        </div>
+      </section>
+
+      <section class="about section-wrap" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">A quick introduction</p>
+          <h2 id="about-title">Hi, I’m glad you’re here<span class="brand-period">.</span></h2>
+        </div>
+        <p class="about-copy">This is my little place to collect curious projects, favorite finds, and lessons from trying things out. I believe the best work starts with paying attention — and giving an idea the space to grow.</p>
+      </section>
+
+      <section class="interests section-wrap" id="interests" aria-labelledby="interests-title">
+        <div class="interests-heading">
+          <div>
+            <p class="eyebrow">A few of my favorite things</p>
+            <h2 id="interests-title">Currently into<span class="brand-period">.</span></h2>
+          </div>
+          <p class="section-aside">A changing list of what’s keeping me curious.</p>
+        </div>
+        <div class="interest-grid">
+          <article class="interest-card card-peach">
+            <div class="card-icon" aria-hidden="true">✎</div>
+            <p class="card-number">01 / MAKE</p>
+            <h3>Making useful things</h3>
+            <p>Turning small ideas into thoughtful little projects — one sketch, draft, or experiment at a time.</p>
+            <span class="card-decoration" aria-hidden="true">✳</span>
+          </article>
+          <article class="interest-card card-lilac">
+            <div class="card-icon" aria-hidden="true">⌕</div>
+            <p class="card-number">02 / NOTICE</p>
+            <h3>Finding inspiration</h3>
+            <p>Good books, long walks, conversations, and all the details you might miss when you rush by.</p>
+            <span class="card-decoration" aria-hidden="true">✳</span>
+          </article>
+          <article class="interest-card card-mint">
+            <div class="card-icon" aria-hidden="true">↗</div>
+            <p class="card-number">03 / GROW</p>
+            <h3>Learning out loud</h3>
+            <p>Sharing notes from the process, including the happy accidents and the things I’m still figuring out.</p>
+            <span class="card-decoration" aria-hidden="true">✳</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing section-wrap">
+        <div class="closing-content">
+          <span class="closing-star" aria-hidden="true">✳</span>
+          <div><p class="eyebrow">That’s the little tour</p><h2>Have something on your mind?</h2></div>
+          <a class="button button-light" href="mailto:hello@example.com">Drop me a note <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">✳</span><span>little things<span class="brand-period">.</span></span></a>
+      <p>Made slowly, with a little sunshine. <span aria-hidden="true">☀</span></p>
+      <a class="back-top" href="#home">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
